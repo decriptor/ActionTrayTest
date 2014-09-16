@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/TrayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Tray" />
+	<Button
+        android:id="@+id/GCButton"
+        android:layout_below="@id/TrayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cause GC" />
+    <Button
+        android:id="@+id/ImageButton"
+        android:layout_below="@id/GCButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creat/Destroy Image" />
+
+    <Appracatappra.ActionComponents.ActionTray.UIActionTray
+        android:id="@+id/tray_right"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:minWidth="0dp"
+        android:minHeight="25dp">
+        <FrameLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tray_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DEDEDE" />
+    </Appracatappra.ActionComponents.ActionTray.UIActionTray>
+</RelativeLayout>
