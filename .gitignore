@@ -10,6 +10,7 @@
 
 # Generated files
 bin/
+obj/
 gen/
 
 # Gradle files
@@ -24,3 +25,5 @@ proguard/
 
 # Log Files
 *.log
+
+*.userprefs
